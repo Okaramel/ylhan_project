@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+body {
+    background-color: rgb(245, 208, 176);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Vidaloka', serif;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius:5px;
+    transition: transform 0.3s ease;
+}
+
+a:hover{
+    color: rgb(35, 12, 247);;
+    transition: 0.3s;
+    border: 2px solid rgb(35, 12, 247);
+    transform: scale(1.1);
+}
+
+.burger-menu {
+    display: none;
+    height: 0;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+.burger-menu.openNav {
+    height: 310px;
+}
+
+.burger-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .menu-bouton {
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Responsive*/
+
+@media (max-width: 990px) {
+    header {
+        background: none;
+    }
+
+    .navbar .menu,
+    .navbar .active {
+        display: none;
+    }
+
+    .navbar .menu-bouton {
+        display: block;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+
+
+
+
+.swiper {
+    border: 2px solid black;
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
