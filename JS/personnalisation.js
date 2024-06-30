@@ -6,10 +6,13 @@ MenuButton.onclick = function() {
 }
 
 //Calcul
+//J'appelle le formulaire et je lui dit qu'au moment où on appuie sur le bouton submit il doit executer le reste du code
 document.getElementById('burgerform').addEventListener('submit', function (event) {
     event.preventDefault();
+    //Je pose un total
     let total = 5;
 
+    //Je prends chaque catégorie et avec le prix que j'ai mit dans les value, j'aditionne avec le total que j'ai marqué au-dessus.
     const pain = document.querySelector('input[name="bread"]:checked');
     if (pain) {
         total += parseFloat(pain.value);
@@ -40,5 +43,6 @@ document.getElementById('burgerform').addEventListener('submit', function (event
         total += parseFloat(boisson.value);
     }
 
+    //Ici je vais chercher l'endroit où je vais mettre le texte qui va mettre le prix total quand on aura appuyer sur le bouton submit.
     document.getElementById('prix_total').innerText = 'Le Prix total est de ' + total.toFixed(2) + ' €.';
 });

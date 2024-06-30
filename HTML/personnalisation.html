@@ -15,15 +15,17 @@
                 <li> <a href="menu.html">Menu</a> </li>
                 <li> <a href="personnalisation.html">Burger Personnalisable</a> </li>
             </ul>
+            <!--Flèche-->
             <div class="menu-bouton">
                 <img src="https://cdn-icons-png.flaticon.com/512/6499/6499731.png" alt="" width="30">
             </div>
         </div>
+        <!--Sidenav-->
         <div class="burger-menu">
             <ul class="menu">
-              <li> <a href="index.html">Accueil</a> </li>
-              <li> <a href="menu.html">Menu</a> </li>
-              <li> <a href="personnalisation.html">Burger Personnalisable</a> </li>
+              <li> <a class="lien" href="index.html">Accueil</a> </li>
+              <li> <a class="lien" href="menu.html">Menu</a> </li>
+              <li> <a class="lien" href="personnalisation.html">Burger Personnalisable</a> </li>
             </ul>
         </div>
     </header>
@@ -34,6 +36,7 @@
         <div class="creation">
             <form id="burgerform">
             <div class="pain">
+                <!--Boutton de type radio-->
                 <h3>Choisissez votre pain !</h3>
                 <input id="nature" type="radio" name="bread" value="0.5"> Pain nature (0.50€)
                 <input id="sesame" type="radio" name="bread" value="0.9"> Pain aux graines de sésame (0.90€)
@@ -81,9 +84,11 @@
                     <input id="gazeuse" type="radio" name="drinks" value="0.9">Perrier (0.90€)
                     <input id="capri" type="radio" name="drinks" value="0.9">Capri-Sun (0.90€)
             </div>
+            <!--Bouton submit-->
             <button class="submit" type="submit">Calculer le prix</button>
         </form>
         </div>
+        <!--C'est là où le prix final va s'afficher-->
         <h2 id="prix_total"></h2>
     </main>
     <footer>
