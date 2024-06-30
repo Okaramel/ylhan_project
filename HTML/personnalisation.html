@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/personalisation.css">
+    <link rel="stylesheet" href="../CSS/personnalisation.css">
     <title>Personalisation</title>
 </head>
 <body>
@@ -27,8 +27,66 @@
             </ul>
         </div>
     </header>
-    <main>Hllo world</main>
+    <main>
+        <div class="intro">
+            <h1>Créer votre propre burger !</h1>
+        </div>
+        <div class="creation">
+            <form id="burgerform">
+            <div class="pain">
+                <h3>Choisissez votre pain !</h3>
+                <input id="nature" type="radio" name="bread" value="0.5"> Pain nature (0.50€)
+                <input id="sesame" type="radio" name="bread" value="0.9"> Pain aux graines de sésame (0.90€)
+            </div>
+            <div class="viande">
+                <h3>Choisissez votre viande !</h3>
+                <input id="boeuf" type="radio" name="meat" value="0.5"> Viande de boeuf (0.50€)
+                <input id="poulet" type="radio" name="meat" value="0.5"> Poulet pané (0.50€)
+                <input id="vege" type="radio" name="meat" value="0.5"> Steak végétarien (0.50€)
+            </div>
+            <div class="ingredient1">
+                <h3>Choisissez vos ingrédients !</h3>
+                <h4>Vous pouvez choisir 3 ingrédients max !</h4>
+                    <input id="salade" type="radio" name="element1" value="0.9">Salade (0.90€)
+                    <input id="tomates" type="radio" name="element1" value="0.9">Tomates (0.90€)
+                    <input id="oignon" type="radio" name="element1" value="0.9">Oignon (0.90€)
+                    <input id="bacon" type="radio" name="element1" value="1">Bacon EXTRA (1€)
+                    <input id="cheddar" type="radio" name="element1" value="1">Cheddar EXTRA (1€)
+                    <input id="cornichon" type="radio" name="element1" value="0.9">Cornichon (0.90€)
+            </div>
+            <div class="ingredient2">
+                <h3>Choisissez vos ingrédients !</h3>
+                    <input id="salade" type="radio" name="element2" value="0.9">Salade (0.90€)
+                    <input id="tomates" type="radio" name="element2" value="0.9">Tomates (0.90€)
+                    <input id="oignon" type="radio" name="element2" value="0.9">Oignon (0.90€)
+                    <input id="bacon" type="radio" name="element2" value="1">Bacon EXTRA (1€)
+                    <input id="cheddar" type="radio" name="element2" value="1">Cheddar EXTRA (1€)
+                    <input id="cornichon" type="radio" name="element2" value="0.9">Cornichon (0.90€)
+            </div>
+            <div class="ingredient3">
+                <h3>Choisissez vos ingrédients !</h3>
+                    <input id="salade" type="radio" name="element3" value="0.9">Salade (0.90€)
+                    <input id="tomates" type="radio" name="element3" value="0.9">Tomates (0.90€)
+                    <input id="oignon" type="radio" name="element3" value="0.9">Oignon (0.90€)
+                    <input id="bacon" type="radio" name="element3" value="1">Bacon EXTRA (1€)
+                    <input id="cheddar" type="radio" name="element3" value="1">Cheddar EXTRA (1€)
+                    <input id="cornichon" type="radio" name="element3" value="0.9">Cornichon (0.90€)
+            </div>
+            <div class="boisson">
+                <h3>Choisissez votre boisson !</h3>
+                    <input id="coca" type="radio" name="drinks" value="1">Coca Cola (1€)
+                    <input id="ice" type="radio" name="drinks" value="1">Ice Tea (1€)
+                    <input id="jus" type="radio" name="drinks" value="1.2">Jus d'ananas (1.20€)
+                    <input id="eau" type="radio" name="drinks" value="0.9">Eau Cristaline (0.90€)
+                    <input id="gazeuse" type="radio" name="drinks" value="0.9">Perrier (0.90€)
+                    <input id="capri" type="radio" name="drinks" value="0.9">Capri-Sun (0.90€)
+            </div>
+            <button class="submit" type="submit">Calculer le prix</button>
+        </form>
+        </div>
+        <h2 id="prix_total"></h2>
+    </main>
     <footer></footer>
-    <script src="../JS/personalisation.js"></script>
+    <script src="../JS/personnalisation.js"></script>
 </body>
 </html>

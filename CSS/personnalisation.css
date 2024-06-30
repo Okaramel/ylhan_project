@@ -168,3 +168,79 @@ header {
         display: block;
     }
 }
+
+.intro {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+h1 {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.creation {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.pain {
+    padding: 10px;
+    margin: 10px;
+}
+
+.viande {
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient1 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient2 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient3 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.frites {
+    padding: 10px;
+    margin: 10px;
+}
+
+.boisson {
+    padding: 10px;
+    margin: 10px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    transition: 2s;
+}
+
+.submit:hover {
+    background-color: rgb(245, 205, 152);
+    transition: 2s;
+}
+
+.valide {
+    padding: 10px;
+}
+
+#prix_total {
+    padding: 10px;
+    margin: 10px;
+}
