@@ -40,5 +40,5 @@ document.getElementById('burgerform').addEventListener('submit', function (event
         total += parseFloat(boisson.value);
     }
 
-    document.getElementById('prix_total').innerText = 'Le Prix total est :' + total.toFixed(2) + '€';
+    document.getElementById('prix_total').innerText = 'Le Prix total est de ' + total.toFixed(2) + ' €.';
 });
